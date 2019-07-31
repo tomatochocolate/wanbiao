@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EACH,KAAK,EAAE,KAAK",
+"sources": ["../sass/register.scss"],
+"names": [],
+"file": "register.css"
+}
