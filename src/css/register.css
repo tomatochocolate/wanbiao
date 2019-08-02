@@ -128,7 +128,7 @@
   display: block;
   margin-bottom: -7px;
   font-weight: 700;
-  background: url(/public/images/sprites-a/icon-a-error-icon.png) no-repeat left center;
+  background: url() no-repeat left center;
   padding-left: 18px;
 }
 .W_main .W_main_box .W_main_box_content .content_box .recommend input {

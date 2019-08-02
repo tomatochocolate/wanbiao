@@ -50,7 +50,6 @@
     }
     a,area,button,input,select,textarea{
         outline:0;
-        background-image:url(about:blank)
     }
     input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
         color:#ccc
