@@ -1,3 +1,77 @@
-
+.W_main {
+  width: 100%;
+  min-width: 990px;
+  margin: 0 auto;
+  background: #fff;
+}
+.W_main .W_main_head {
+  width: 100%;
+  height: 100px;
+}
+.W_main .W_main_head .W_main_head_logo {
+  width: 1000px;
+  margin: 25px auto 0;
+}
+.W_main .W_main_head .W_main_head_logo h6 {
+  font-size: 0;
+}
+.W_main .W_main_head .W_main_head_logo h6 a {
+  width: 121px;
+  display: block;
+}
+.W_main .W_main_head .W_main_head_logo h6 a img {
+  border: 0;
+  display: block;
+}
+.W_main .W_main_content {
+  position: relative;
+  width: 100%;
+  height: 580px;
+  background: #a5a5a5;
+}
+.W_main .W_main_content .login-bg {
+  position: absolute;
+  width: 100%;
+  height: 580px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.W_main .W_main_content .W_main_content_login {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+.W_main .W_main_content .W_main_content_login .loginIframeWrap {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  border: none;
+  background-color: #fff;
+}
+.W_main .W_main_content .W_main_content_login .loginIframeWrap .loginIframe {
+  position: relative;
+  left: 0;
+  top: 0;
+  border: none;
+}
+.W_main .W_main_content .W_main_content_login .loginIframeWrap .loginIframe html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.W_main .W_pt_footer {
+  border-top: 1px solid #eee;
+  padding: 50px 0;
+  width: 640px;
+  margin: 0 auto;
+}
+.W_main .W_pt_footer p {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  line-height: 20px;
+}
 
 /*# sourceMappingURL=login.css.map */

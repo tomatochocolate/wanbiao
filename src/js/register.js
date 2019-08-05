@@ -94,11 +94,12 @@ $(function () {
         $(mobile).val()
         $.ajax({
             type: "post",
-            // dataType: "json",
+            dataType: "json",
             url: "../api/register.php",
             data: { "mobile": $(mobile).val(), "password": $(passwordA).val() },
             success(res, status, xhr) {
                 console.log(res);
+                console.log(1)
 
             },
             error(xhr, status, statusText) {
