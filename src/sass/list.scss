@@ -1,0 +1,113 @@
+.W_main {
+    width: 100%;
+    min-width: 990px;
+    margin: 0 auto;
+    background: #fff;
+    .W_bread {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        background: url(//static.wbiao.co/p/pc/images/goods/W_detail_Bread.png) repeat-x;
+        overflow: hidden;
+        color: #666;
+        margin-bottom: 18px;
+        .bread_inner {
+            width: 1200px;
+            margin: 0 auto;
+            .bread_left a::before {
+                content: ">";
+                font-size: 13px;
+                color: #383737;
+                display: inline-block;
+                font-family: "宋体";
+                margin-right: 8px;
+                margin-left: 5px;
+            }
+            .top_hot_keyword a {
+                display: block;
+                margin: 0 8px;
+                line-height: 36px;
+            }
+        }
+    }
+    .W_list_wrap {
+        width: 1200px;
+        margin: 0 auto;
+        .list_left_area {
+            width: 210px;
+            display: inline;
+            .list_act {
+                position: relative;
+                height: 416px;
+                margin-bottom: 25px;
+                width: 100%;
+                overflow: hidden;
+                .bx-controls {
+                        .bx-pager {
+                            height: 6px;
+                            text-align: center;
+                            .bx-pager-item {
+                                display: inline-block;
+                            a {
+                                display: block;
+                                width: 6px;
+                                height: 6px;
+                                border-radius: 50%;
+                                background: #ccc;
+                                font-size: 0;
+                                margin: 0 3px;
+                            }
+                            a.active {
+                                background: #cc9952;
+                            }
+                        }
+                    }
+                }
+            }
+            .friend_comment{
+                margin-bottom: 25px;
+                width: 100%;
+                overflow: hidden;
+                .tab_txt {
+                    background-color: #f1f1f1;
+                    display: flex;
+                    li {
+                        flex: 1;
+                        display: inline-block;
+                        cursor: pointer;
+                        color: #999;
+                        font-size: 14px;
+                        text-align: center;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+                .moudle_con {
+                    padding-top: 0;
+                    padding-bottom: 30px;
+                    position: relative;
+                    height: 308px;
+                    background-color: #fff;
+                }
+            }
+            .brows_history {
+                margin-bottom: 25px;
+                width: 100%;
+                overflow: hidden;
+            }
+            .watch_information {
+                margin-bottom: 25px;
+                width: 100%;
+                overflow: hidden;
+            }
+            .side_tab {
+                margin-bottom: 25px;
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+        .list_right_area {
+            width: 970px;
+        }
+    }
+}

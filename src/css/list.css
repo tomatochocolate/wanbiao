@@ -1,3 +1,94 @@
-
+@charset "UTF-8";
+.W_main {
+  width: 100%;
+  min-width: 990px;
+  margin: 0 auto;
+  background: #fff; }
+  .W_main .W_bread {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    background: url(//static.wbiao.co/p/pc/images/goods/W_detail_Bread.png) repeat-x;
+    overflow: hidden;
+    color: #666;
+    margin-bottom: 18px; }
+    .W_main .W_bread .bread_inner {
+      width: 1200px;
+      margin: 0 auto; }
+      .W_main .W_bread .bread_inner .bread_left a::before {
+        content: ">";
+        font-size: 13px;
+        color: #383737;
+        display: inline-block;
+        font-family: "瀹嬩綋";
+        margin-right: 8px;
+        margin-left: 5px; }
+      .W_main .W_bread .bread_inner .top_hot_keyword a {
+        display: block;
+        margin: 0 8px;
+        line-height: 36px; }
+  .W_main .W_list_wrap {
+    width: 1200px;
+    margin: 0 auto; }
+    .W_main .W_list_wrap .list_left_area {
+      width: 210px;
+      display: inline; }
+      .W_main .W_list_wrap .list_left_area .list_act {
+        position: relative;
+        height: 416px;
+        margin-bottom: 25px;
+        width: 100%;
+        overflow: hidden; }
+        .W_main .W_list_wrap .list_left_area .list_act .bx-controls .bx-pager {
+          height: 6px;
+          text-align: center; }
+          .W_main .W_list_wrap .list_left_area .list_act .bx-controls .bx-pager .bx-pager-item {
+            display: inline-block; }
+            .W_main .W_list_wrap .list_left_area .list_act .bx-controls .bx-pager .bx-pager-item a {
+              display: block;
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              background: #ccc;
+              font-size: 0;
+              margin: 0 3px; }
+            .W_main .W_list_wrap .list_left_area .list_act .bx-controls .bx-pager .bx-pager-item a.active {
+              background: #cc9952; }
+      .W_main .W_list_wrap .list_left_area .friend_comment {
+        margin-bottom: 25px;
+        width: 100%;
+        overflow: hidden; }
+        .W_main .W_list_wrap .list_left_area .friend_comment .tab_txt {
+          background-color: #f1f1f1;
+          display: flex; }
+          .W_main .W_list_wrap .list_left_area .friend_comment .tab_txt li {
+            flex: 1;
+            display: inline-block;
+            cursor: pointer;
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px; }
+        .W_main .W_list_wrap .list_left_area .friend_comment .moudle_con {
+          padding-top: 0;
+          padding-bottom: 30px;
+          position: relative;
+          height: 308px;
+          background-color: #fff; }
+      .W_main .W_list_wrap .list_left_area .brows_history {
+        margin-bottom: 25px;
+        width: 100%;
+        overflow: hidden; }
+      .W_main .W_list_wrap .list_left_area .watch_information {
+        margin-bottom: 25px;
+        width: 100%;
+        overflow: hidden; }
+      .W_main .W_list_wrap .list_left_area .side_tab {
+        margin-bottom: 25px;
+        width: 100%;
+        overflow: hidden; }
+    .W_main .W_list_wrap .list_right_area {
+      width: 970px; }
 
 /*# sourceMappingURL=list.css.map */
