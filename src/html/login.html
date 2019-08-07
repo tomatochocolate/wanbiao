@@ -25,10 +25,93 @@
             <a target="_self" href="" class="login-bg" style="background-image:url('../img/login1.jpg');background-color: #87270c;"></a>
             <div class="W_main_content_login">
                 <div class="loginIframeWrap">
-                    <div class="loadingCover h" id="loginIframeCover">
-                        <img src="" alt="">
-                    </div>
-                    <iframe src="/member/loginframe" onload="wb.hideLoginFrameCover()" class="loginIframe" scrolling="no" width="380" height="460"></iframe>
+                    <form class="W_login_mark" id="W_login_mark" method="post" action="/member/loginframe">
+                        <p class="login_tab" id="loginTab">
+                            <span class="on" title="userLogin" id="userLogin">会员登录</span>
+                            <em>竖杠</em>
+                            <span title="codeLogin" class="scan" id="codeLogin">扫码登录</span>
+                        </p>
+                        <div class="user_login" id="userLoginWrap">
+                            <div class="member_login password ">
+                                <p>
+                                    <input type="text" name="userAccount" placeholder="手机号码/会员名/邮箱" class="user_name" id="userAccount" value="">
+                                    <i></i>
+                                </p>
+                                <p>
+                                    <input type="password" name="userPassword" maxlength="20" placeholder="密码" class="password" id="user_psd">
+                                    <i></i>
+                                </p>
+                                <p class="identifying_code identifying_code_name h">
+                                    <input type="text" maxlength="4" placeholder="图形验证码" id="identifys">
+                                    <img src="/pub/captcha?w=98&amp;h=38&amp;46477438" onclick="this.src='/pub/captcha?w=98&amp;h=38&amp;'+Math.random();" alt="验证码"
+                                        title="看不清？点击更换另一个验证码。">
+                                    <i></i>
+                                </p>
+                                <input class="login" id="user_login" type="submit" value="立即登录">
+                                <a href="javascript:void(0);" class="login isLogin h">
+                                    <em class="icon-a-o-load"></em>
+                                </a>
+                                <p>
+                                    <a target="_blank" href="javascript:void(0);" data-href="/member/register" class="fl">免费注册</a>
+                                    <a target="_blank" href="javascript:void(0);" data-href="/member/forgetpsd" class="fr">忘记密码</a>
+                                </p>
+                                <p class="pos">
+                                    <a href="javascript:void(0);" class="phone_dynamic" id="passwordLogin">手机动态码登录
+                                        <em class="icon-a-hot"></em>
+                                    </a>
+                                    <em>|</em>
+                                    <a href="javascript:void(0);" class="social_login" data-phone="true">社交登录</a>
+                                </p>
+                                <span class="pos_btm h">仅在APP开放QQ、微信等社交帐号登录功能，
+                                    <strong>下载登录</strong>
+                                </span>
+                            </div>
+                            <div class="member_login phone h">
+                                <p class="mobile">
+                                    <input type="text" name="phoneNumber" placeholder="手机号码" class="phone_num" maxlength="11">
+                                    <i></i>
+                                </p>
+                                <p class="captcha_wrap">
+                                    <input type="text" value="" id="message_need_captcha_code" placeholder="请输入图形验证码" maxlength="4" class="fl">
+                                    <span class="img-wrap fl">
+                                        <img src="/pub/captcha2?w=94&amp;h=42&amp;05821522" onclick="this.src='/pub/captcha2?w=98&amp;h=38&amp;'+Math.random();"
+                                            alt="验证码" title="看不清？点击更换另一个验证码。">
+                                    </span>
+                                </p>
+                                <p class="message_code">
+                                    <input type="text" name="messageVerifyCode" placeholder="短信验证码" maxlength="6" id="note_code">
+                                    <a href="javascript:void(0);" id="get_code">获取验证码</a>
+                                    <i></i>
+                                </p>
+                                <p class="identifying_code identifying_code_phone h">
+                                    <input type="text" maxlength="4" placeholder="图形验证码" id="identify">
+                                    <img src="/pub/captcha?w=98&amp;h=38&amp;38823508" onclick="this.src='/pub/captcha?w=98&amp;h=38&amp;'+Math.random();" alt="验证码"
+                                        title="看不清？点击更换另一个验证码。">
+                                    <i></i>
+                                </p>
+                                <input type="submit" class="login" id="user_login2" value="立即登录">
+                                <a href="javascript:void(0);" class="login isLogin h">
+                                    <em>
+                                        <img src="//static.wbiao.co/p/pc/images/1/loading-red.gif" alt="">
+                                    </em>
+                                </a>
+                                <p>
+                                    <a href="javascript:void(0);" data-href="/member/register" class="fl">免费注册</a>
+                                </p>
+                                <p class="pos">
+                                    <a href="javascript:void(0);" class="phone_dynamic" id="accountPswLogin">账号密码</a>
+                                    <em>|</em>
+                                    <a href="javascript:void(0);" class="social_login" data-phone="true">社交登录</a>
+                                </p>
+                                <span class="pos_btm h" data-phone="true">仅在APP开放QQ、微信等社交帐号登录功能，
+                                    <strong>下载登录</strong>
+                                </span>
+                            </div>
+                        </div>
+                        <input type="hidden" name="loginType" id="loginType" value="1">
+
+                    </form>
+
                 </div>
             </div>
         </div>
