@@ -108,6 +108,476 @@
         }
         .list_right_area {
             width: 970px;
+            .search_floor {
+                position: relative;
+                color: #666;
+                background: #fff;
+                margin-bottom: 45px;
+                .srh_result {
+                    position: relative;
+                    background: #fafafa;
+                    min-width: 22px;
+                    line-height: 22px;
+                    padding: 5px 80px 5px 12px;
+                    border: 1px solid #ddd;
+                    border-bottom: 0;
+                    .select_a {
+                        display: inline-block;
+                    }
+                    .cancel_selection {
+                        color: #999;
+                        position: absolute;
+                        top: 7px;
+                        right: 10px;
+                    }
+                }
+                .search_filter_line {
+                    border: 1px solid #ddd;
+                    border-top: 0;
+                    .property_list {
+                        margin-bottom: -1px;
+                        .srh_block {
+                            line-height: 40px;
+                            position: relative;
+                            border-bottom: 1px solid #eee;
+                        }
+                        .srh_block:nth-child(2){
+                            border: 0;
+                            margin-bottom: 1px;
+                        }
+                        .hide {
+                            display: none;
+                        }
+                        
+                    }
+                    .srh_block {
+                        line-height: 40px;
+                        position: relative;
+                        border-bottom: 1px solid #eee;
+                        .srh_title {
+                            border-top: 1px solid #fff;
+                        }
+                        .srh_right {
+                            position: relative;
+                            margin-left: 80px;
+                            margin-right: 12px;
+                            .srh_option {
+                                width: 750px;
+                                height: 26px;
+                                padding: 7px 15px;
+                                overflow: hidden;
+                                li {
+                                    margin-right: 23px;
+                                    display: block;
+                                }
+                                li.on a {
+                                    background: #333;
+                                    color: #fff;
+                                    border-radius: 2px;
+                                    padding-bottom: 1px;
+                                }
+                            }
+                            .brand_option .srh_option {
+                                height: auto;
+                                li {
+                                    width: 110px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    margin-right: 10px;
+                                    a {
+                                        padding: 0 3px 1px;
+                                    }
+                                }
+                            }
+                            .price_range {
+                                position: absolute;
+                                right: 0;
+                                .price_input {
+                                    text-align: center;
+                                    border: 1px solid #dbdbdb;
+                                    outline: 0;
+                                    height: 19px;
+                                    line-height: 19px;
+                                    vertical-align: middle;
+                                }
+                                .price_btn {
+                                    width: 52px;
+                                    height: 20px;
+                                    line-height: 17px;
+                                    cursor: pointer;
+                                    margin-left: 8px;
+                                    display: inline-block;
+                                    background: #f0f0f0;
+                                    border: 1px solid #ececec;
+                                    text-align: center;
+                                    color: #666;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .property_list {
+                        margin-bottom: -1px;
+                    }
+                    .srh_more_btn{
+                            position: absolute;
+                            right: 0;
+                            a {
+                                display: inline-block;
+                                width: 50px;
+                                background: #f0f0f0;
+                                border: 1px solid #ececec;
+                                margin-left: 5px;
+                                margin-top: 10px;
+                                text-align: center;
+                                color: #666;
+                            }
+                            .icon-d-down {
+                                transition: all .3s ease;
+                                display: inline-block;
+                                vertical-align: top;
+                                margin-top: 4px;
+                                background-image: url(../img/list1.png);
+                                background-position: -389px -86px;
+                                background-size: 475px;
+                                width: 12px;
+                                height: 12px;
+                            }
+                    }
+                }
+                .srh_more_block {
+                    width: 280px;
+                    height: 24px;
+                    line-height: 20px;
+                    position: absolute;
+                    bottom: -24px;
+                    left: 50%;
+                    margin-left: -140px;
+                    text-align: center;
+                    margin-bottom: 1px;
+                    .toggle_btn {
+                        width: auto;
+                        display: inline-block;
+                        padding: 0 13px;
+                        height: 24px;
+                        background-color: #fff;
+                        border: 1px solid #ddd;
+                            border-top-color: rgb(221, 221, 221);
+                        border-top-color: #fff;
+                        cursor: pointer;
+                        color: #999;
+                        .icon-a-wallet-down1 {
+                            margin-bottom: -1px;
+                            display: inline-block;
+                            background-image: url(../img/register3.png);
+                            background-position: -576px -434px;
+                            background-size: 589px;
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+                
+            }
+            .goods_floor {
+                margin: 0 auto 25px;
+                background: #fff;
+                .sort_list {
+                    position: relative;
+                    border-bottom: 1px solid #eee;
+                    .sort_con01 {
+                        display: inline-block;
+                        vertical-align: top;
+                        li {
+                            display: block;
+                            float: left;
+                            width: 80px;
+                            height: 36px;
+                            text-align: center;
+                            a {
+                                position: relative;
+                                line-height: 34px;
+                                display: inline-block;
+                            }
+                        }
+                        li.on a {
+                            color: #cc9952;
+                            font-weight: 700;
+                            border-bottom: 3px solid #cc9952;
+                        }
+                    }
+                    .sort_con02 {
+                        display: inline-block;
+                        margin-top: 8px;
+                        padding-left: 10px;
+                        border-left: 1px solid #ddd;
+                        a {
+                            margin-left: 20px;
+                            .radio_def {
+                                position: relative;
+                                display: inline-block;
+                                width: 14px;
+                                height: 14px;
+                                border: 1px solid #ccc;
+                                border-radius: 20%;
+                                margin-bottom: -3px;
+                                margin-right: 4px;
+                                box-sizing: border-box;
+                            }
+                        }
+                    }
+                    .stop_pages {
+                        line-height: 36px;
+                        .p_pagesnum {
+                            margin-right: 10px;
+                            font-size: 14px;
+                            color: #999;
+                            i {
+                                font-size: 14px;
+                            }   
+                        }
+                        a {
+                            position: relative;
+                            display: inline-block;
+                            width: 24px;
+                            height: 24px;
+                            text-align: center;
+                            vertical-align: middle;
+                            z-index: 0;
+                            i {
+                                position: absolute;
+                                top: 6px;
+                                left: 6px;
+                            }
+                            .icon-a-arrow02-1 {
+                                display: block;
+                                background-image: url(../img/register3.png);
+                                background-position: -576px -474px;
+                                background-size: 589px;
+                                width: 6px;
+                                height: 11px;
+                            }
+                            .icon-a-arrow02-2 {
+                                display: block;
+                                background-image: url(../img/register3.png);
+                                background-position: -576px -516px;
+                                background-size: 589px;
+                                width: 6px;
+                                height: 11px;
+                            }
+                        }
+                        a.unfouse  {
+                            cursor: default;
+                        }
+                    }
+                }
+                .s_goods_list {
+                    ul {
+                        margin-right: -8.6px;
+                        li {
+                            position: relative;
+                            width: 236px;
+                            height: 450px;
+                            display: block;
+                            overflow: hidden;
+                            float: left;
+                            margin: 10px 8.6px 10px 0;
+                            .s_goods_img {
+                                display: block;
+                                overflow: hidden;
+                                width: 220px;
+                                height: 275px;
+                                margin: 10px auto 5px auto;
+                                position: relative;
+                                text-align: center;
+                                img {
+                                    width: auto;
+                                    height: 275px;
+                                    position: absolute;
+                                    left: 50%;
+                                    margin-left: -137.5px;
+                                    background-color: #fff;
+                                }
+                            }
+                            .promotionTag {
+                                width: 50px;
+                                height: 50px;
+                                position: absolute;
+                                left: 28px;
+                                top: 10px;
+                            }
+                            .goods_txt {
+                                margin: 0 16px;
+                                padding-bottom: 20px;
+                                line-height: 18px;
+                                .tPrc {
+                                    overflow: hidden;
+                                    margin-bottom: 10px;
+                                    .month_tag {
+                                        position: relative;
+                                        top: -2px;
+                                        display: inline-block;
+                                        padding: 0 2px;
+                                        background: linear-gradient(270deg,#ff8080 0,#e65c5c 100%);
+                                        border-radius: 2px;
+                                        color: #fff;
+                                    }
+                                    .fenqi_price {
+                                        margin-right: 10px;
+                                        color: #e65c5c;
+                                        font-size: 16px;
+                                        font-family: DIN-Bold;
+                                        em {
+                                            font-size: 16px;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                    .s_price{
+                                        position: relative;
+                                        color: #666;
+                                        font-size: 16px;
+                                        font-family: DIN-Bold;
+                                        font-weight: 400;
+                                        em {
+                                            position: relative;
+                                            color: #666;
+                                            font-size: 16px;
+                                            font-family: DIN-Bold;
+                                            font-weight: 400;
+                                        }
+                                    }
+                                    .s_price::before {
+                                        content: '';
+                                        position: absolute;
+                                        top: 4px;
+                                        left: -7px;
+                                        width: 1px;
+                                        height: 12px;
+                                        background: #ddd;
+                                    }
+                                }
+                                .s_goods_name {
+                                    height: 36px;
+                                    line-height: 18px;
+                                    margin-bottom: 8px;
+                                    color: #666;
+                                    overflow: hidden;
+                                }
+                                .goods_sale {
+                                    margin-bottom: 4px;
+                                    color: #999;
+                                    .sale_tips {
+                                        color: #cc5252;
+                                        margin-bottom: 8px;
+                                    }
+                                }
+                                .s_shop {
+                                    display: block;
+                                    margin-bottom: 7px;
+                                    color: #999;
+                                }
+                                .sale_tags{
+                                    span{
+                                        display: inline-block;
+                                        line-height: 16px;
+                                        padding: 0 7px;
+                                        border-radius: 2px;
+                                        background: 0 0;
+                                        border: 1px solid #cc9952;
+                                        color: #cc9952;
+                                    }
+                                }
+                                .goods_hover {
+                                    position: absolute;
+                                    bottom: 10px;
+                                    width: 204px;
+                                    display: none;
+                                    background: #fff;
+                                    a {
+                                        display: block;
+                                        float: left;
+                                        border: 1px solid #eee;
+                                        box-sizing: border-box;
+                                        width: 50%;
+                                        text-align: center;
+                                        line-height: 28px;
+                                        color: #333;
+                                    }
+                                    .add_to_cart{
+                                        color: #cc5252;
+                                        margin-left: -1px;
+                                    }
+                                }
+                                
+                            }
+                        }
+                        li:hover .goods_hover {
+                            display: block;
+                        }
+                    }
+                }
+                .list_page {
+                    text-align: center;
+                    padding: 30px 0 40px;
+                    a{
+                        display: inline-block;
+                        width: 28px;
+                        height: 28px;
+                        line-height: 28px;
+                        font-size: 14px;
+                        color: #999;
+                        margin-left: 8px;
+                        border-radius: 50%;
+                        border: 1px solid #fff;
+                    }
+                    a.active {
+                        border: 1px solid #666;
+                        background-color: #666;
+                        color: #fff;
+                    }
+                    span {
+                        display: inline-block;
+                        width: 28px;
+                        height: 28px;
+                        line-height: 28px;
+                        font-size: 14px;
+                        color: #999;
+                        margin-left: 8px;
+                        border-radius: 50%;
+                        border: 1px solid #fff;
+                    }
+                }
+            }
+            .wb_words_floor {
+                margin-bottom: 50px;
+                background: #fff;
+                .works_link {
+                    padding: 22px 12px 0;
+                    color: #666;
+                    .wort_tit {
+                        padding-bottom: 6px;
+                        margin-bottom: 6px;
+                        border-bottom: 1px solid #eee;
+                        a {
+                            line-height: 12px;
+                        }
+                    }
+                    ul {
+                        height: 26px;
+                        overflow: hidden;
+                        li {
+                            display: block;
+                            float: left;
+                            margin-right: 15px;
+                            margin-bottom: 8px;
+                            a {
+                                color: #999;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
