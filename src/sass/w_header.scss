@@ -151,3 +151,218 @@
         
     }
 }
+.W_pt_nav {
+    position: relative;
+    width: 100%;
+    .pt_nav_warp {
+        width: 1200px;
+        margin: 0 auto;
+        .pt_nav_left {
+            width: 202px;
+            height: 48px;
+            line-height: 48px;
+            margin-right: 20px;
+            .all_wb_txt {
+                height: 48px;
+                line-height: 48px;
+                display: block;
+                padding: 0 16px;
+                font-size: 14px;
+                color: #fff;
+                background-image: linear-gradient(269deg,#b34747 1%,#cc5252 98%);
+                background-color: #b32424;
+                .icon-a-all {
+                    display: inline-block;
+                    float: right;
+                    margin-top: 16px;
+                    background-image: url(../img/register3.png);
+                    background-position: -280px -325px;
+                    background-size: 589px;
+                    width: 14px;
+                    height: 14px;
+                
+                }
+            
+            }
+            .nav_left_menu {
+                width: 202px;
+                height: 460px;
+                position: absolute;
+                z-index: 88;
+                box-shadow: 2px 0 4px 0 rgba(0,0,0,.1),-2px 0 4px 0 rgba(0,0,0,.1);
+                display: none;
+                // background: rgba(255,255,255,.9);
+                background: #e6e6e6;
+                .menu_box {
+                    width: 100%;
+                    height: 57.5px;
+                    overflow: hidden;
+                    box-shadow: inset -20px -7px 7px -15px rgba(0,0,0,.04);
+                    dl {
+                        width: 185px;
+                        height: 100%;
+                        margin: 0 auto;
+                        box-shadow: inset 0 1px 0 0 rgba(196,142,142,.1);
+                        dt{
+                            a {
+                                color: #4d4d4d;
+                                float: left;
+                                margin-right: 4px;
+                                font-weight: 700;
+                                line-height: 57.5px;
+                                em {
+                                    display: inline-block;
+                                    color: #b3b3b3;
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                        .rel {
+                            overflow: hidden;
+                            width: 100%;
+                            max-width: 119px;
+                            height: 57.5px;
+                            color: #ccc;
+                            a {
+                                padding: 0;
+                                margin-right: 3px;
+                                line-height: 57.5px;
+                            }
+                        }
+                        .sub_menu {
+                            display: none;
+                            width: 998px;
+                            height: 460px;
+                            background-color: #fff;
+                            position: absolute;
+                            top: 0;
+                            left: 202px;
+                            box-shadow: 4px 0 8px 0 rgba(0,0,0,.1);
+                            .col_box {
+                                overflow: hidden;
+                                width: 717px;
+                                margin: 23px 28px 0 24px;
+                                .t {
+                                    position: relative;
+                                    display: block;
+                                    color: #666;
+                                    margin-bottom: 12px;
+                                    line-height: 15px;
+                                    padding-left: 7px;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                }
+                                .brand_list {
+                                    position: relative;
+                                    width: 712px;
+                                    max-height: 278px;
+                                    margin-bottom: 24px;
+                                    box-sizing: border-box;
+                                    ul {
+                                        width: 712px;
+                                        overflow-y: scroll;
+                                        max-height: 278px;
+                                        li {
+                                            position: relative;
+                                            width: 139px;
+                                            height: 79px;
+                                            overflow: hidden;
+                                            border: 1px solid #e6e6e6;
+                                            box-sizing: border-box;
+                                            margin-left: -1px;
+                                            a {
+                                                display: block;
+                                                width: 139px;
+                                                height: 79px;
+                                                text-align: center;
+                                                .p_logo {
+                                                    width: 100%;
+                                                    height: 40px;
+                                                    background-color: #fff;
+                                                    padding-top: 19px;
+                                                    img {
+                                                        width: auto;
+                                                        height: 100%;
+                                                    }
+                                                }
+                                                .p_name {
+                                                    display: none;
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    line-height: 79px;
+                                                    font-weight: 700;
+                                                    font-size: 14px;
+                                                    color: #fff;
+                                                    background-color: #ccaa7a;
+                                                    text-align: center;
+                                                }
+                                            }
+                                        }
+                                        li:nth-child(5n+1) {
+                                            margin-left: 0;
+                                        }
+                                    }
+                                    .brand_bottom {
+                                        width: 100%;
+                                        height: 20px;
+                                        position: absolute;
+                                        left: 0;
+                                        z-index: 2;
+                                        bottom: -1px;
+                                        background: url(//static.wbiao.co/p/pc/images/1/brand-logo-down.png) bottom center repeat;
+                                    }
+                                }
+                                .hot_a {
+                                    display: inline-block;
+                                    height: 36px;
+                                    line-height: 36px;
+                                    padding: 0 18px;
+                                    border: 1px solid #eee;
+                                    border-radius: 100px;
+                                    font-size: 14px;
+                                    color: #666;
+                                }
+                            }
+                            .brand_ads {
+                                display: block;
+                                width: 205px;
+                                height: 412px;
+                                margin-top: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pt_nav_right {
+            height: 48px;
+            ul{
+                li {
+                    margin-left: 24px;
+                    float: left;
+                    position: relative;
+                    a {
+                        height: 41px;
+                        line-height: 41px;
+                        font-size: 14px;
+                        color: #333;
+                        display: block;
+                        position: relative;
+                    }
+                }
+                li.circle::before {
+                    content: "";
+                    position: absolute;
+                    right: -6px;
+                    top: 6px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: #b32424;
+                }
+            }
+        }
+    }
+}
