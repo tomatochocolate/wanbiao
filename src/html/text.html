@@ -9,20 +9,17 @@
 </head>
 
 <body>
-
-</body>
-<script src="../js/jquery-3.4.1.js"></script>
-<script>
-    $(function () {
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script>
         $.ajax({
             type: "get",
-            url: "../api/test1.php",
-            success(res, k) {
-                console.log(res, k);
-
+            dataType: "json",
+            url: "../api/text1.php",
+            success: function (res) {
+                console.log(res);
             }
         })
-    })
-</script>
+    </script>
+</body>
 
 </html>

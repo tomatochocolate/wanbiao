@@ -43,11 +43,9 @@
                                 </p>
                                 <p class="identifying_code identifying_code_name h">
                                     <input type="text" maxlength="4" placeholder="图形验证码" id="identifys">
-                                    <img src="/pub/captcha?w=98&amp;h=38&amp;46477438" onclick="this.src='/pub/captcha?w=98&amp;h=38&amp;'+Math.random();" alt="验证码"
-                                        title="看不清？点击更换另一个验证码。">
                                     <i></i>
                                 </p>
-                                <input class="login" id="user_login" type="submit" value="立即登录">
+                                <input class="login" id="user_login" type="button" value="立即登录">
                                 <a href="javascript:void(0);" class="login isLogin h">
                                     <em class="icon-a-o-load"></em>
                                 </a>
@@ -74,8 +72,6 @@
                                 <p class="captcha_wrap">
                                     <input type="text" value="" id="message_need_captcha_code" placeholder="请输入图形验证码" maxlength="4" class="fl">
                                     <span class="img-wrap fl">
-                                        <img src="/pub/captcha2?w=94&amp;h=42&amp;05821522" onclick="this.src='/pub/captcha2?w=98&amp;h=38&amp;'+Math.random();"
-                                            alt="验证码" title="看不清？点击更换另一个验证码。">
                                     </span>
                                 </p>
                                 <p class="message_code">
@@ -85,11 +81,9 @@
                                 </p>
                                 <p class="identifying_code identifying_code_phone h">
                                     <input type="text" maxlength="4" placeholder="图形验证码" id="identify">
-                                    <img src="/pub/captcha?w=98&amp;h=38&amp;38823508" onclick="this.src='/pub/captcha?w=98&amp;h=38&amp;'+Math.random();" alt="验证码"
-                                        title="看不清？点击更换另一个验证码。">
                                     <i></i>
                                 </p>
-                                <input type="submit" class="login" id="user_login2" value="立即登录">
+                                <input type="button" class="login" id="user_login2" value="立即登录">
                                 <a href="javascript:void(0);" class="login isLogin h">
                                     <em>
                                         <img src="//static.wbiao.co/p/pc/images/1/loading-red.gif" alt="">
@@ -123,5 +117,7 @@
     </div>
 
 </body>
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../js/login.js"></script>
 
 </html>

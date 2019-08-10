@@ -2,7 +2,7 @@ var lis = $(".s_goods_list li");
 var arrT = [];
 lis.each(function (index, ele) {
     var o = {};
-    o.src = "https" + $(ele).children("a").find("img").attr("src");
+    o.src = $(ele).children("a").find("img").attr("src");
     o.y_price = $(ele).find(".fenqi_price").text().replace("￥", "").replace(".", "");
     o.s_price = $(ele).find(".s_price").children().html().replace(",", "");
     o.name = $(ele).find(".s_goods_name").html();
@@ -13,3 +13,5 @@ lis.each(function (index, ele) {
     arrT.push(o)
 })
 console.log(arrT);
+
+// JSON.stringify(arrT)

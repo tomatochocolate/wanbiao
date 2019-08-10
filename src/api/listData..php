@@ -9,7 +9,7 @@
 
     $data = json_decode($json,true);
 
-    for($i = 0;$i < count($data);$i++)
+    for($i = 0;$i <= count($data);$i++)
     {
       $name = $data[$i]["name"];
       $src = $data[$i]["src"];
