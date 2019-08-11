@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/w_header.css">
     <link rel="stylesheet" href="css/w_footer.css">
+    <link rel="stylesheet" href="css/swiper.css">
 </head>
 
 <body>
     <include src="html/w_header.html"></include>
 
     <div class="W_main">
-        <div class="W_home_banner">
+        <!-- <div class="W_home_banner">
             <div class="swiper-container">
                 <ul class="swiper-wrapper">
                     <li>
@@ -29,7 +30,38 @@
                 <div class="swiper-next"></div>
                 <div class="swiper-prev"></div>
             </div>
+        </div> -->
+        <div class="slideshow">
+            <div class="cantainer">
+                <div class="swiper-container" id="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background: lavender;">
+                            <img src="//image8.wbiao.co/mall/4198c7b94511440b97e2210463be25e6.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" style="background: lavenderblush;">
+                            <img src="//image8.wbiao.co/mall/0dcc05a94b15404fad642fe2f6edc421.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" style="background: lawngreen;">
+                            <img src="//image8.wbiao.co/mall/69bc6c0c8f6c406eac3842d200f6abc9.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" style="background: lemonchiffon;">
+                            <img src="//image8.wbiao.co/mall/7fb446673eb84e7d8e12baba53ee10d2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" style="background: lightcoral;">
+                            <img src="//image8.wbiao.co/mall/a8cb35e220594b33be5560f03e58341f.jpg" alt="">
+                        </div>
+                    </div>
+                    <!--按钮-->
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+                    <!--分页-->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
         </div>
+
         <div class="W_index_block">
             <div class="index_block_01 tp_list index_block" data-itemcode="2RRlCW" data-tagcode="ZZkUP">
                 <a target="_blank" href="https://www.wbiao.cn/list-300.html" data-scode="3d8VPs" class="pp_a lazy-load fl">
@@ -2224,5 +2256,42 @@
 
 </body>
 <script src="js/include.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+    //swiper基本款
+    var s1 = new Swiper('.swiper-container', {
+        autoplay: {//自动轮播
+            delay: 3000,//间隔时间
+            disableOnInteraction: false //拖拽完后还能继续自动轮播
+        },
+        loop: true,//无缝
+        // navigation: {//上下按钮
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev'
+        // },
+        pagination: {//焦点跟随
+            el: '.swiper-pagination',
+            clickable: true,//点击焦点跳到指定图片
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '"></span>';//生成焦点数字
+                // ' + (index + 1) + '
+            }
+        },
+        // mousewheel: true,//滚动滑轮可以切图
+        // effect: 'fade'//选用:效果
+    });
+
+    var oBox = document.getElementById('swiper-container');
+
+    oBox.onmouseover = function () {//鼠标经过停止
+        s1.autoplay.stop();
+    }
+
+    oBox.onmouseout = function () {//鼠标离开就运动
+        s1.autoplay.start();
+    }
+
+</script>
 
 </html>

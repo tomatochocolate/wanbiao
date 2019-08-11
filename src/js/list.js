@@ -2,6 +2,8 @@ $(function () {
     let itemData;
     let oUl = $("#s_goods_list ul");
 
+    let ipage = 1; // 第几页
+    let num = 24;
 
     $.ajax({
         type: "get",
