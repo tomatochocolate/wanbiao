@@ -296,4 +296,17 @@
         .W_main .W_index_block .index_block_04 .W_gnTab_content .dren_list .dren_a:nth-child(2n+1) {
           margin-right: 12px; }
 
+        .topTab{
+          background: #333;
+          width: 50px;
+          height: 50px;
+          position: fixed;
+          right: 30px;
+          bottom: 150px;
+          line-height: 50px;
+          color: #fff;
+          border: 2px solid #ccc;
+          border-radius: 50%;
+        }
+
 /*# sourceMappingURL=index.css.map */
