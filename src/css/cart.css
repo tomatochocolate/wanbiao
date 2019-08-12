@@ -227,20 +227,6 @@
           top: 24px;
           left: 16px;
           cursor: pointer; }
-        .W_main .cart_wrap .W_settle_floor ul .select_tik .icon-a-c-check01-1 {
-          display: block;
-          background-image: url(../img/register3.png);
-          background-position: -576px -255px;
-          background-size: 589px;
-          width: 12px;
-          height: 12px; }
-        .W_main .cart_wrap .W_settle_floor ul .select_tik .icon-a-c-check01-2 {
-          display: none;
-          background-image: url(../img/register3.png);
-          background-position: -576px -233px;
-          background-size: 589px;
-          width: 12px;
-          height: 12px; }
       .W_main .cart_wrap .W_settle_floor ul .choose_num {
         margin-left: 133px; }
         .W_main .cart_wrap .W_settle_floor ul .choose_num em {
@@ -272,5 +258,24 @@
               color: #cc5252;
               font-size: 14px;
               font-weight: 700; }
+
+.icon-a-c-check01-1 {
+  display: block;
+  background-image: url(../img/register3.png);
+  background-position: -576px -255px;
+  background-size: 589px;
+  width: 12px;
+  height: 12px; }
+
+.icon-a-c-check01-2 {
+  display: none;
+  background-image: url(../img/register3.png);
+  background-position: -576px -233px;
+  background-size: 589px;
+  width: 12px;
+  height: 12px; }
+
+.on .icon-a-c-check01-2 {
+  display: block; }
 
 /*# sourceMappingURL=cart.css.map */

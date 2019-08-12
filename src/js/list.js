@@ -82,15 +82,32 @@ $(function () {
 
     //     }
     // });
-    $(oUl).on("click", "li img", function () {
+    $(oUl).on("click", ".s_goods_img", function () {
         var id = $(this).data("id");
         // console.log(id);
         window.open("../html/detail.html?" + id)
     })
 
-    $(oUl).on("click", ".add_to_cart", function () {
-        alert("加入购物车")
-    })
+    // $(oUl).on("click", ".add_to_cart", function () {
+    //     $.ajax({
+    //         type: "get",
+    //         url: "../js/addCart.php",
+    //         data: `goodid=${goodid}&price=${price}&src=${src}&num=${num}`,
+    //         success: function (response) {
+    //             $(".showBox").css("display", "block");
+    //             var time = setInterval(function () {
+    //                 $(".showBox").hide();
+    //             }, 3000)
+
+    //             $(".u-buy-close").click(function () {
+    //                 $(".showBox").hide();
+    //                 clearInterval();
+    //             })
+    //         }
+    //     });
+
+    // })
+
 
     // 分页
     var currPage = 1;

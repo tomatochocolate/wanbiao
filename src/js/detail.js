@@ -373,4 +373,39 @@ $(function () {
 
         }
     });
+
+
+    $(oUl).on("click", "#js_cart", function () {
+        let price = $(".js_stages").text();
+        console.log(price);
+        let src = $("#zoom")[0].src;
+        console.log(src);
+        let num = $("#count")[0].value;
+        console.log(num);
+
+        $.ajax({
+            type: "get",
+            url: "../api/addCart.php",
+            data: `goodid=${id}&price=${price}&src=${src}&num=${num}`,
+            success: function (response) {
+                console.log(response);
+
+                // $(".showBox").css("display", "block");
+                // var time = setInterval(function () {
+                //     $(".showBox").hide();
+                // }, 3000)
+
+                // $(".u-buy-close").click(function () {
+                //     $(".showBox").hide();
+                //     clearInterval();
+                // })
+            }
+        });
+
+    })
+
+    oUl.on("click", ".upper_button_a", function () {
+        window.open("../html/cart.html")
+
+    })
 })

@@ -275,22 +275,7 @@
                         left: 16px;
                         cursor: pointer;
                     }
-                    .icon-a-c-check01-1 {
-                        display: block;
-                        background-image: url(../img/register3.png);
-                        background-position: -576px -255px;
-                        background-size: 589px;
-                        width: 12px;
-                        height: 12px;
-                    }
-                    .icon-a-c-check01-2 {
-                        display: none;
-                        background-image: url(../img/register3.png);
-                        background-position: -576px -233px;
-                        background-size: 589px;
-                        width: 12px;
-                        height: 12px;
-                    }
+                    
                 }
                 .choose_num {
                     margin-left: 133px;
@@ -333,5 +318,26 @@
                 }
             }
         }
+    }
+}
+.icon-a-c-check01-1 {
+    display: block;
+    background-image: url(../img/register3.png);
+    background-position: -576px -255px;
+    background-size: 589px;
+    width: 12px;
+    height: 12px;
+}
+.icon-a-c-check01-2 {
+    display: none;
+    background-image: url(../img/register3.png);
+    background-position: -576px -233px;
+    background-size: 589px;
+    width: 12px;
+    height: 12px;
+}
+.on{
+    .icon-a-c-check01-2 {
+        display: block
     }
 }
