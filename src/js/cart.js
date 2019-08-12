@@ -54,11 +54,11 @@ $(function () {
                 $(".W_store_floor").html(res);
                 getTotalPrice(data);
                 $("#selectedQuantity").text(count);
-                // if (count == data.length) {
-                //     $(".check-all").addClass("checkbox-checked");
-                // } else {
-                //     $(".check-all").removeClass("checkbox-checked");
-                // }
+                if (count == data.length) {
+                    $(".all").addClass("on");
+                } else {
+                    $(".all").removeClass("on");
+                }
 
                 // $(".my-cart-tit").children("span").text(data.length);
                 // getTotalPrice(data);
@@ -73,6 +73,7 @@ $(function () {
     }
     getCatInfo();
 
+    // 点击选择
     $(".W_store_floor").on("click", ".select_tik ", function (e) {
         let index = $('.select_tik').index($(this));
         // console.log(index);
@@ -86,6 +87,31 @@ $(function () {
         } else {
             isActive = 1;
         }
+        updateSelect();
+    })
+
+    // 全选
+    $(".all").click(function () {
+        // let all = $(".on").length;
+        // let check = $(".icon-a-c-check01-2").length;
+        // console.log(all, check);
+
+        // if (all == check) {
+        //     console.log("全选");
+
+        // } else {
+        //     $("")
+        // }
+
+        let flag = $(this).hasClass("on");
+        console.log(flag);
+
+        if (flag) {
+            isActive = 0;
+        } else {
+            isActive = 1;
+        }
+        goodid = "";
         updateSelect();
     })
 

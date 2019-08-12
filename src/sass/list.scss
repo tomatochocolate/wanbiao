@@ -88,22 +88,159 @@
                     position: relative;
                     height: 308px;
                     background-color: #fff;
+                    .bx-wrapper {
+                        position: absolute;
+                        background-color: #fff;
+                        z-index: 1;
+                        height: 100%;
+                    }
+                    .bx-pager {
+                        margin-top: 30px;
+                        height: 2px;
+                        text-align: center;
+                        .bx-pager-item {
+                            display: inline-block;
+                            a {
+                                width: 20px;
+                                height: 2px;
+                                background-color: #ccc;
+                                border-radius: 0;
+                                font-size: 0;
+                                margin: 0 3px;
+                                display: block;
+                            }
+                            a.active {
+                                background-color: #cc9952;
+                            }
+                        }
+                    }
                 }
             }
             .brows_history {
                 margin-bottom: 25px;
                 width: 100%;
                 overflow: hidden;
+                .history_tit {
+                    color: #666;
+                    font-size: 14px;
+                    font-weight: 700;
+                    height: 40px;
+                    line-height: 40px;
+                    background-color: #f1f1f1;
+                    padding-left: 12px;
+                }
+                .history_goods {
+                    padding: 28px 15px 0;
+                    color: #959595;
+                    line-height: 20px;
+                    border: 1px solid #eee;
+                    a {
+                        display: block;
+                        margin-bottom: 28px;
+                        overflow: hidden;
+                        .p1 {
+                            position: relative;
+                            width: 160px;
+                            margin: 0 auto;
+                            text-align: center;
+                            background: #e6e6e6 url(//static.wbiao.co/p/pc/images/1/bitmap.png) no-repeat center center;
+                            background-color: #fff;
+                            &>img {
+                                display: inline-block;
+                                height: 160px;
+                            }
+                            .yaofeng {
+                                position: absolute;
+                                width: 100%;
+                                bottom: 0;
+                                left: 0;
+                                img {
+                                    width: 100%;
+                                }
+                                span {
+                                    position: absolute;
+                                    right: 3px;
+                                    bottom: 3px;
+                                    color: #fff;
+                                    font-size: 12px;
+                                    font-family: DIN-Bold;
+                                    .yaofeng_price {
+                                        font-size: 14px;
+                                        font-family: DIN-Bold;
+                                    }
+                                }
+                            }
+                        }
+                        .month_tag {
+                            position: relative;
+                            top: -2px;
+                            display: inline-block;
+                            padding: 0 2px;
+                            background: linear-gradient(270deg,#ff8080 0,#e65c5c 100%);
+                            border-radius: 2px;
+                            color: #fff;
+                        }
+                        .fenqi_price {
+                            margin-right: 10px;
+                            color: #e65c5c;
+                            font-size: 16px;
+                            font-family: DIN-Bold;
+                        }
+                        .s_price {
+                            position: relative;
+                            color: #666;
+                            font-size: 16px;
+                            font-family: DIN-Bold;
+                            font-weight: 400;
+                        }
+                        .p3 {
+                            margin-top: 6px;
+                            color: #999;
+                        }
+                    }
+                }
             }
             .watch_information {
                 margin-bottom: 25px;
                 width: 100%;
                 overflow: hidden;
             }
-            .side_tab {
+            .moulde_side {
                 margin-bottom: 25px;
                 width: 100%;
                 overflow: hidden;
+                .tab_txt {
+                    background-color: #f1f1f1;
+                    display: flex;
+                    li {
+                        flex: 1;
+                        display: inline-block;
+                        cursor: pointer;
+                        color: #999;
+                        font-size: 14px;
+                        text-align: center;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+                .moudle_con {
+                    padding-top: 20px;
+                    color: #959595;
+                    line-height: 20px;
+                    border: 1px solid #eee;
+                    .hot_word,.tab_con {
+                        padding: 0 8px 12px 8px;
+                        a {
+                            display: inline-block;
+                            color: #666;
+                            padding: 4px 11px;
+                            border: 1px solid #ddd;
+                            border-radius: 100px;
+                            margin-right: 4px;
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
             }
         }
         .list_right_area {

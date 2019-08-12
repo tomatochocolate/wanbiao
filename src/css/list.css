@@ -76,18 +76,132 @@
           position: relative;
           height: 308px;
           background-color: #fff; }
+          .W_main .W_list_wrap .list_left_area .friend_comment .moudle_con .bx-wrapper {
+            position: absolute;
+            background-color: #fff;
+            z-index: 1;
+            height: 100%; }
+          .W_main .W_list_wrap .list_left_area .friend_comment .moudle_con .bx-pager {
+            margin-top: 30px;
+            height: 2px;
+            text-align: center; }
+            .W_main .W_list_wrap .list_left_area .friend_comment .moudle_con .bx-pager .bx-pager-item {
+              display: inline-block; }
+              .W_main .W_list_wrap .list_left_area .friend_comment .moudle_con .bx-pager .bx-pager-item a {
+                width: 20px;
+                height: 2px;
+                background-color: #ccc;
+                border-radius: 0;
+                font-size: 0;
+                margin: 0 3px;
+                display: block; }
+              .W_main .W_list_wrap .list_left_area .friend_comment .moudle_con .bx-pager .bx-pager-item a.active {
+                background-color: #cc9952; }
       .W_main .W_list_wrap .list_left_area .brows_history {
         margin-bottom: 25px;
         width: 100%;
         overflow: hidden; }
+        .W_main .W_list_wrap .list_left_area .brows_history .history_tit {
+          color: #666;
+          font-size: 14px;
+          font-weight: 700;
+          height: 40px;
+          line-height: 40px;
+          background-color: #f1f1f1;
+          padding-left: 12px; }
+        .W_main .W_list_wrap .list_left_area .brows_history .history_goods {
+          padding: 28px 15px 0;
+          color: #959595;
+          line-height: 20px;
+          border: 1px solid #eee; }
+          .W_main .W_list_wrap .list_left_area .brows_history .history_goods a {
+            display: block;
+            margin-bottom: 28px;
+            overflow: hidden; }
+            .W_main .W_list_wrap .list_left_area .brows_history .history_goods a .p1 {
+              position: relative;
+              width: 160px;
+              margin: 0 auto;
+              text-align: center;
+              background: #e6e6e6 url(//static.wbiao.co/p/pc/images/1/bitmap.png) no-repeat center center;
+              background-color: #fff; }
+              .W_main .W_list_wrap .list_left_area .brows_history .history_goods a .p1 > img {
+                display: inline-block;
+                height: 160px; }
+              .W_main .W_list_wrap .list_left_area .brows_history .history_goods a .p1 .yaofeng {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0; }
+                .W_main .W_list_wrap .list_left_area .brows_history .history_goods a .p1 .yaofeng img {
+                  width: 100%; }
+                .W_main .W_list_wrap .list_left_area .brows_history .history_goods a .p1 .yaofeng span {
+                  position: absolute;
+                  right: 3px;
+                  bottom: 3px;
+                  color: #fff;
+                  font-size: 12px;
+                  font-family: DIN-Bold; }
+                  .W_main .W_list_wrap .list_left_area .brows_history .history_goods a .p1 .yaofeng span .yaofeng_price {
+                    font-size: 14px;
+                    font-family: DIN-Bold; }
+            .W_main .W_list_wrap .list_left_area .brows_history .history_goods a .month_tag {
+              position: relative;
+              top: -2px;
+              display: inline-block;
+              padding: 0 2px;
+              background: linear-gradient(270deg, #ff8080 0, #e65c5c 100%);
+              border-radius: 2px;
+              color: #fff; }
+            .W_main .W_list_wrap .list_left_area .brows_history .history_goods a .fenqi_price {
+              margin-right: 10px;
+              color: #e65c5c;
+              font-size: 16px;
+              font-family: DIN-Bold; }
+            .W_main .W_list_wrap .list_left_area .brows_history .history_goods a .s_price {
+              position: relative;
+              color: #666;
+              font-size: 16px;
+              font-family: DIN-Bold;
+              font-weight: 400; }
+            .W_main .W_list_wrap .list_left_area .brows_history .history_goods a .p3 {
+              margin-top: 6px;
+              color: #999; }
       .W_main .W_list_wrap .list_left_area .watch_information {
         margin-bottom: 25px;
         width: 100%;
         overflow: hidden; }
-      .W_main .W_list_wrap .list_left_area .side_tab {
+      .W_main .W_list_wrap .list_left_area .moulde_side {
         margin-bottom: 25px;
         width: 100%;
         overflow: hidden; }
+        .W_main .W_list_wrap .list_left_area .moulde_side .tab_txt {
+          background-color: #f1f1f1;
+          display: flex; }
+          .W_main .W_list_wrap .list_left_area .moulde_side .tab_txt li {
+            flex: 1;
+            display: inline-block;
+            cursor: pointer;
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px; }
+        .W_main .W_list_wrap .list_left_area .moulde_side .moudle_con {
+          padding-top: 20px;
+          color: #959595;
+          line-height: 20px;
+          border: 1px solid #eee; }
+          .W_main .W_list_wrap .list_left_area .moulde_side .moudle_con .hot_word, .W_main .W_list_wrap .list_left_area .moulde_side .moudle_con .tab_con {
+            padding: 0 8px 12px 8px; }
+            .W_main .W_list_wrap .list_left_area .moulde_side .moudle_con .hot_word a, .W_main .W_list_wrap .list_left_area .moulde_side .moudle_con .tab_con a {
+              display: inline-block;
+              color: #666;
+              padding: 4px 11px;
+              border: 1px solid #ddd;
+              border-radius: 100px;
+              margin-right: 4px;
+              margin-bottom: 8px; }
     .W_main .W_list_wrap .list_right_area {
       width: 970px; }
       .W_main .W_list_wrap .list_right_area .search_floor {
